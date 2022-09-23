@@ -3,7 +3,7 @@ import csv_operations
 
 
 
-if csv_operations.csv_filled() == False:
+if csv_operations.csv_filled('nameteam.csv') == False:
     print('Welcome to the Team Manager Assistant, before you get underway, there are several questions you must answer.')
     manager_name = input('What is your first name? ')
     team_name = input('What is the name of your team? ')
