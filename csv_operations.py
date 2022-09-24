@@ -1,5 +1,9 @@
 import csv
 
+# def dict_filter(it, *keys):
+#     for d in it:
+#         yield dict((k, d[k]) for k in keys)
+
 def csv_filled(file):
     with open(file, 'r') as f:
         f.seek(0)
