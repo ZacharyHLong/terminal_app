@@ -1,6 +1,7 @@
 import view_roster
 import csv_operations as co
 import view_roster
+import add_player as ap
 
 
 def return_to_menu():
@@ -21,9 +22,6 @@ def menu():
     print ('5) Quit ')
     print(' ')
 
-    
-
-    
 
 def menu_loop():
     display_menu = True

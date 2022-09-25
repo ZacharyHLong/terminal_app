@@ -15,10 +15,6 @@ if co.csv_filled('nameteam.csv') == False:
 
     co.csv_create('nameteam.csv', header, content)
 
-    # with open('nameteam.csv', 'w') as f:
-    #     writer = csv.writer(f)
-    #     writer.writerow(['name', 'team'])
-    #     writer.writerow([manager_name, team_name])
 
 # welcome message
 with open('nameteam.csv') as f:
