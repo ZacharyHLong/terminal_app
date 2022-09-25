@@ -1,4 +1,4 @@
-import view_roster
+import csv
 import csv_operations as co
 import view_roster
 import add_player as ap
@@ -34,7 +34,8 @@ def menu_loop():
             return_to_menu()
 
         elif menu_input == '2':
-            print('2')
+            print('Add Player')
+            ap.add_player()
             return_to_menu()
 
         elif menu_input == '3':
