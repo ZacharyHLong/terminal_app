@@ -24,3 +24,4 @@ def csv_create(file, header_list, content_list):
         writer = csv.writer(f)
         writer.writerow(header_list)
         writer.writerow(content_list)
+
