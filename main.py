@@ -1,5 +1,6 @@
 import csv 
 import csv_operations as co
+import pandas as pd
 import view_roster
 import menu
 from prettytable import from_csv
