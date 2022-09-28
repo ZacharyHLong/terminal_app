@@ -4,19 +4,25 @@ from prettytable import from_csv
 import pandas as pd
 
 def display_roster():
+    with open('nameteam.csv') as f:
+        reader = csv.reader(f)
+        reader.__next__()
+        for row in reader:
+            print(f':::::::{row[1]}::::::::')
+    
     with open('roster.csv', 'r') as f:
         mytable = from_csv(f)
         print(mytable)
 
 
-def roster_check():
+def roster_check(filler):
     rowcount = 0
 
     for row in open('roster.csv'):
         rowcount += 1
     
     if rowcount <= 1:
-        print('You need to add players before you can view the roster! ')
+        print('You need to add players before you can ' + filler + ' the roster! ')
         return
     else:
         display_roster()

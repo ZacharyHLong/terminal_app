@@ -1,6 +1,6 @@
 import csv
 import csv_operations as co
-from player_class import Player
+
 
 
 # def loop_content():

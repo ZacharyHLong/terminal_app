@@ -30,4 +30,3 @@ menu.menu_loop()
 
 
 
-# first_name,last_name,jersey_number,phone,has_paid

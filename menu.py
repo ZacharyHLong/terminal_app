@@ -1,7 +1,8 @@
 import csv
 import csv_operations as co
-import view_roster
+import view_roster as vr
 import add_player as ap
+import remove_player as rp
 
 
 def return_to_menu():
@@ -30,7 +31,7 @@ def menu_loop():
         menu_input = input('What would you like to do? ')
         if menu_input == '1':
             print('View Roster')
-            view_roster.roster_check()
+            vr.roster_check('view')
             return_to_menu()
 
         elif menu_input == '2':
@@ -39,7 +40,7 @@ def menu_loop():
             return_to_menu()
 
         elif menu_input == '3':
-            print('3')
+            rp.remove_loop()
             return_to_menu()
 
         elif menu_input == '4':
