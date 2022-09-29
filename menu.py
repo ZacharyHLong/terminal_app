@@ -19,8 +19,7 @@ def menu():
     print ('1) View Roster ')
     print ('2) Add Player ')
     print ('3) Remove Player ')
-    print ('4) Teamsheet Payment ')
-    print ('5) Quit ')
+    print ('4) Quit ')
     print(' ')
 
 
@@ -44,10 +43,6 @@ def menu_loop():
             return_to_menu()
 
         elif menu_input == '4':
-            print('4')
-            return_to_menu()
-
-        elif menu_input == '5':
             print('Thanks for using the Team Manager Assistant')
             quit()
             

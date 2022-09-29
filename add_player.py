@@ -1,15 +1,7 @@
 import csv
 import csv_operations as co
+import exceptions as ex
 
-
-
-# def loop_content():
-#     first_name = input("What is the player's first name?: ")
-#     last_name = input("What is the player's last name?: ")
-#     jersey_number = input("What is the player's jersey number?: ")
-#     phone_number = input("What is the player's phone number?: ")
-#     temp_player = [first_name, last_name, jersey_number, phone_number]
-#     content.append(temp_player)
 
 def add_loop():
     content = []
@@ -37,8 +29,9 @@ def add_player():
     cont_loop = True
     while cont_loop == True:    
         if user_input == 'y':
-            first_name = input("What is the player's first name?: ")
-            last_name = input("What is the player's last name?: ")
+            # first_name = input("What is the player's first name?: ")
+            first_name = ex.get_a_name( "What is the player's first name?: ")
+            last_name = ex.get_a_name("What is the player's last name?: ")
             jersey_number = input("What is the player's jersey number?: ")
             phone_number = input("What is the player's phone number?: ")
             content = [first_name, last_name, jersey_number, phone_number]
@@ -51,19 +44,3 @@ def add_player():
             break
         else:
             print('Please enter either y or n. ')
-
-        
-
-
-
-
-
-        # while co.csv_filled('roster.csv') == False:
-        #     header = ['first_name', 'last_name', 'jersey_number', 'phone_number']
-        #     content = []
-        #     co.csv_create('roster.csv', header, content)
-
-        # else:
-            
-        #     writer.writerow(content)
-        #     return
