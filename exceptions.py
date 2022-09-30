@@ -1,3 +1,5 @@
+import pandas as pd
+
 class LenError(Exception):
    pass
 
@@ -66,9 +68,26 @@ def get_a_name(message):
 
 
 
-def removal_checker():
-    pass
-#make sure player is in the list of players
+def removal_checker(message):
+    roster = pd.read_csv('roster.csv', index_col = 'First Name')
+    valid_input = False
+    while not valid_input:
+        try:
+            user_input = get_a_name(message)
+            print(roster)
+            if user_input not in roster.values:
+                raise KeyError('That player is not on the roster. Please enter a name from above. ')
+            else:
+                raise KeyError()
+        except KeyError as err:
+            KeyError(err)
+        else:
+            valid_input = True
+            return user_input
+        finally:
+            print('finally')
+
+
 
 def menu_selector():
     pass
