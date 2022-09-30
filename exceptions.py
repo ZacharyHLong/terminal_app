@@ -1,4 +1,5 @@
 import pandas as pd
+import csv
 
 class LenError(Exception):
    pass
@@ -69,23 +70,22 @@ def get_a_name(message):
 
 
 def removal_checker(message):
-    roster = pd.read_csv('roster.csv', index_col = 'First Name')
+    roster = pd.read_csv('roster.csv')
+    first_names = roster['First Name']
     valid_input = False
     while not valid_input:
         try:
             user_input = get_a_name(message)
-            print(roster)
-            if user_input not in roster.values:
-                raise KeyError('That player is not on the roster. Please enter a name from above. ')
+            for i in first_names:
+                if user_input == i:
+                    valid_input = True
+                    return user_input
             else:
-                raise KeyError()
+                raise KeyError
+               
         except KeyError as err:
-            KeyError(err)
-        else:
-            valid_input = True
-            return user_input
-        finally:
-            print('finally')
+            print('Please enter the name of a player on the roster')
+
 
 
 
