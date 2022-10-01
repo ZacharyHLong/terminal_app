@@ -1,27 +1,6 @@
 import csv
 import csv_operations as co
 import exceptions as ex
-
-
-# def add_loop():
-#     content = []
-#     cont_loop = True
-#     while cont_loop == True:
-#         user_input = input('\nWould you like to add a player to the roster? (y/n): ')
-#         if user_input == 'y':
-#             first_name = input("What is the player's first name?: ")
-#             last_name = input("What is the player's last name?: ")
-#             jersey_number = input("What is the player's jersey number?: ")
-#             phone_number = input("What is the player's phone number?: ")
-#             content = [first_name, last_name, jersey_number, phone_number]
-#             content.append(temp_player)
-#         elif user_input == 'n':
-#             cont_loop = False
-#             break
-#         else:
-#             print('Please enter either y or n. ')
-
-
            
             
 def add_player():
