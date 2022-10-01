@@ -4,12 +4,13 @@ import pandas as pd
 import view_roster
 import menu
 import exceptions as ex
+import random
 from prettytable import from_csv
 
 
 # first time initialisation
 if co.csv_filled('nameteam.csv') == False:
-    print('Welcome to the Team Manager Assistant, before you get underway, there are several questions you must answer.')
+    print('\nWelcome to the Team Manager Assistant, before you get underway, there are several questions you must answer.')
     manager_name = ex.get_a_name('What is your first name? ')
     team_name = ex.get_a_name('What is the name of your team? ')
     content = [manager_name, team_name]
@@ -23,7 +24,7 @@ with open('nameteam.csv') as f:
     reader = csv.reader(f)
     reader.__next__()
     for row in reader:
-        print(f'Welcome {row[0]}, manager of {row[1]}')
+        print(f'\nWelcome {row[0]}, manager of {row[1]}')
         break
 
 #menu

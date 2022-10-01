@@ -9,10 +9,11 @@ def remove_loop():
     roster = pd.read_csv('roster.csv', index_col ='First Name')
     vr.roster_check('remove players from')
     
-    remove_player_loop = input('Do you want to remove a player from the roster? (y/n): ')
-# ccc
-    if remove_player_loop == 'y':
-        while cont_loop == True:     
+    
+    while cont_loop == True: 
+        remove_player_loop = input('\nDo you want to remove a player from the roster? (y/n): ')
+        if remove_player_loop == 'y':
+            
             user_input = ex.removal_checker('Enter the first name of the player you would like to remove?: ')
             drop_confirmation = input('Are you sure you want to remove ' + user_input + '? (y/n): ')
 
@@ -30,13 +31,12 @@ def remove_loop():
                 break
 
             else:
-                print('Please enter either y or n. ')
+                print('\nPlease enter either y or n. ')
 
-    elif remove_player_loop == 'n':
-        cont_loop = False
-        return
+        elif remove_player_loop == 'n':
+            cont_loop = False
+            return
 
-        
-    else:
-        print('Please enter either y or n. ')
+        else:
+            print('\nPlease enter either y or n. ')
 

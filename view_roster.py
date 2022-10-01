@@ -8,7 +8,9 @@ def display_roster():
         reader = csv.reader(f)
         reader.__next__()
         for row in reader:
-            print(f':::::::{row[1]}::::::::')
+            team = f'  {row[1]}  '
+            x = team.center(57, ':')
+            print(x)
     
     with open('roster.csv', 'r') as f:
         mytable = from_csv(f)

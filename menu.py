@@ -4,49 +4,56 @@ import view_roster as vr
 import add_player as ap
 import remove_player as rp
 
+def menu_header(text):
+    menu_item = f'  {text}  '
+    x = menu_item.center(57, ':')
+    print(f'\n{x}\n')
 
 def return_to_menu():
-    user_input = input('Would you like to return to the menu? (y/n): ')
-    if user_input == 'n': 
-        print('Thanks for using the Team Manager Assistant')
-        quit()
-    elif user_input == 'y':
-        return
-    else:
-        print('Please enter either y or n. ')
+    cont_loop = True
+    while cont_loop:
+        user_input = input('\nWould you like to return to the menu? (y/n): ')
+        if user_input == 'n': 
+            print('\nThanks for using the Team Manager Assistant!\n')
+            quit()
+        elif user_input == 'y':
+            return
+        else:
+            print('\nPlease enter either y or n. ')
 
 def menu():
-    print ('1) View Roster ')
-    print ('2) Add Player ')
-    print ('3) Remove Player ')
-    print ('4) Quit ')
-    print(' ')
+    menu_header('Menu')
+    print ('   1) View Roster \n')
+    print ('   2) Add Player \n')
+    print ('   3) Remove Player \n')
+    print ('   4) Quit \n')
 
 
 def menu_loop():
     display_menu = True
     while display_menu == True:
         menu()
-        menu_input = input('What would you like to do? ')
+        menu_input = input('What would you like to do?\nType in the corresponding menu number: ')
         if menu_input == '1':
-            print('View Roster')
+            menu_header('View Roster')
             vr.roster_check('view')
             return_to_menu()
 
         elif menu_input == '2':
-            print('Add Player')
+            menu_header('Add Player')
             ap.add_player()
             return_to_menu()
 
         elif menu_input == '3':
+            menu_header('Remove Player')
             rp.remove_loop()
             return_to_menu()
 
         elif menu_input == '4':
-            print('Thanks for using the Team Manager Assistant')
+            print('\nThanks for using the Team Manager Assistant!\n')
             quit()
             
         else:
-            print('Please enter a valid menu number. ')
+            print('\nPlease enter a valid menu number. \n')
             
 

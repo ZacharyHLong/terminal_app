@@ -15,13 +15,13 @@ def len_num_check(message, val1, val2):
     len_count = len(variable)
     while True:
         if not variable.isnumeric():
-            raise NumError('Only numerical characters are allowed. ')
+            raise NumError('\nOnly numerical characters are allowed. \n')
         elif len_count == val1:
             return variable
         elif len_count == val2:
             return variable
         else:
-            raise LenError(f'Integer entered must be either {val1} or {val2} digits. ')
+            raise LenError(f'\nInteger entered must be either {val1} or {val2} digits. \n')
 
 
 def get_a_number(message, val1, val2):
@@ -30,13 +30,12 @@ def get_a_number(message, val1, val2):
     while not valid_input:
         try:
             variable = len_num_check(message, val1, val2)
-            # num_char_check(variable)
         except NumError as num_err:
             print(num_err)
         except LenError as len_err:
             print(len_err)
         except ValueError:
-            print('Please enter an integer. ')
+            print('\nPlease enter an integer. \n')
         else:
             valid_input = True
             return variable
@@ -46,7 +45,7 @@ def get_a_number(message, val1, val2):
 def alpha_char_check(message):
     variable = str(input(message))
     if not variable.isalpha():
-        raise AlphaError('Only alphabetical characters are allowed. ')
+        raise AlphaError('\nOnly alphabetical characters are allowed. \n')
     else:
         return variable.title()
 
@@ -62,7 +61,7 @@ def get_a_name(message):
         except AlphaError as err:
             print(err)
         except ValueError:
-            print('Please enter a name! (Alphabetical characters only). ')
+            print('\nPlease enter a name! (Alphabetical characters only). \n')
         else:
             valid_input = True
             return variable
@@ -84,7 +83,7 @@ def removal_checker(message):
                 raise KeyError
                
         except KeyError as err:
-            print('Please enter the name of a player on the roster')
+            print('\nPlease enter the name of a player on the roster\n')
 
 
 
