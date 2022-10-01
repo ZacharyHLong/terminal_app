@@ -54,6 +54,6 @@ def menu_loop():
             quit()
             
         else:
-            print('\nPlease enter a valid menu number. \n')
+            print('\nPlease enter a valid menu number. ')
             
 

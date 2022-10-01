@@ -10,7 +10,7 @@ Underpinning this application are several features that enable the team manager 
    - They will be provided with a menu of options.
    - View roster, add player, remove player, track payments, and determine payee.
    - Each option will be possible to be selected by the corresponding number next to the option. Notably, the option to remove player, track payments and determine payee will not be available until at least one player has been registered.
-   - Tetsing will be enabled to ensure correct inputs have been included.
+   - Testing will be enabled to ensure correct inputs have been included.
    - Upon initialisation, the included csv file will be loaded into the application, allowing returning managers to continue or update the team roster.
 
 2. View Roster
