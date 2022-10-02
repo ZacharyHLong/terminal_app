@@ -1,7 +1,6 @@
 import csv
 
 # A function that checks if a CSV file already contains information.
-# Only used for the initialisation of the program.
 def csv_filled(file):
     with open(file, 'r') as f:
         f.seek(0)

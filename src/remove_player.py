@@ -15,12 +15,12 @@ def remove_loop():
         if remove_player_loop == 'y':
             
             user_input = ex.removal_checker('Enter the first name of the player you would like to remove?: ')
-            drop_confirmation = input('This action cannot be undone.\nAre you sure you want to remove ' + user_input + '? (y/n): ')
+            drop_confirmation = input('Are you sure you want to remove ' + user_input + '? (y/n): ')
 
             if drop_confirmation == 'y':
                 roster.drop(user_input, axis = 0, inplace = True)
                 roster.to_csv('src/roster.csv')
-                print('Successfully removed ' + user_input)
+                print('\nSuccessfully removed ' + user_input +'\n')
                 loop_break = input('Would you like to remove another player? (y/n): ')
                 if loop_break == 'n':
                     cont_loop = False

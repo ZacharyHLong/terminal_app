@@ -2,7 +2,8 @@ import csv
 import csv_operations as co
 import exceptions as ex
            
-# A loop that contains several functions in order to get accurate information when adding a player, and then saves it to a CSV file            
+# A loop that contains several functions in order to get accurate information when adding a player.
+# And then saves it to a CSV file.            
 def add_player():
     cont_loop = True
     while cont_loop == True:

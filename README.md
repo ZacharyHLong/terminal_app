@@ -5,15 +5,17 @@ The data is stored and can be retrieved at a later date, allowing users to appen
 
 ---
 ## [Github Repo](https://github.com/ZacharyHLong/terminal_app)  
+
+## [YouTube Presentation]()
 ---
 ## Style Guide
 This project is adhering to the PEP 8 - Style Guide  
 ### [PEP 8](https://peps.python.org/pep-0008/)
 ---
 ## Features
-The Team Manager Assistant is composed of several key features that work in conjunction to help users store and manage their team information. The following features comprise the Team Manager Assistant:
+The Team Manager Assistant is composed of several key features that work in conjunction with each other to help team managers store and manage their team information. The following features comprise the Team Manager Assistant:
 ### **View Roster**
-The View Roster feature allows user's to view the team information they have input. This feature contains some simple loops and conditional control structures to determine if information has been input.  
+The View Roster feature allows users to view the team information they have input. This feature contains some simple loops and conditional control structures to determine if information has been input.  
 
 - If no players have been added, users will be unable to view the roster.
 - If players have been added, users will then be directed to a formatted table of the players information.
@@ -49,3 +51,19 @@ Trello was used to manage the development of the Team Manager Assistant. There w
 ![Trello Board Image](docs/trello-board.png)
 
 ----
+## Installation Instructions
+1. If you do not have Python installed you can install it [here](https://www.python.org/downloads/)
+   
+2. Clone the files form this repository using this command line instruction:   
+   
+    `git clone https://github.com/ZacharyHLong/terminal_app`
+
+3. Run the following command (will install required python packages):
+   
+   `bash src/install.sh`
+
+4. Enjoy using the Team Manager Assistant!
+
+---
+## Author
+### Zachary Long

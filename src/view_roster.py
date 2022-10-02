@@ -13,11 +13,11 @@ def display_roster():
             x = team.center(57, ':')
             print(x)
     
-    with open('roster.csv', 'r') as f:
+    with open('src/roster.csv', 'r') as f:
         mytable = from_csv(f)
         print(mytable)
 
-# Check's to see if the user has added any players to the roster.
+# Checks to see if the user has added any players to the roster.
 def roster_check(filler):
     rowcount = 0
 
