@@ -6,7 +6,7 @@ The data is stored and can be retrieved at a later date, allowing users to appen
 ---
 ## [Github Repo](https://github.com/ZacharyHLong/terminal_app)  
 
-## [YouTube Presentation]()
+## [YouTube Presentation](https://youtu.be/vpCJ3zRv5MY)
 ---
 ## Style Guide
 This project is adhering to the PEP 8 - Style Guide  

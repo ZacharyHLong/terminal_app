@@ -4,7 +4,6 @@ import pandas as pd
 import view_roster
 import menu
 import exceptions as ex
-import random
 from prettytable import from_csv
 
 
