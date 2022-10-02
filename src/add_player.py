@@ -16,10 +16,9 @@ def add_player():
 
             content = [first_name, last_name, jersey_number, phone_number]
 
-            with open('roster.csv', 'a+') as f:
+            with open('src/roster.csv', 'a+') as f:
                 writer = csv.writer(f)
                 writer.writerow(content)
-            user_input = input('\nWould you like to add another player? (y/n): ')
 
         elif user_input == 'n':
             cont_loop = False

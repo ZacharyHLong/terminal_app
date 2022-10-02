@@ -5,7 +5,7 @@ import pandas as pd
 
 # Displays the user's roster information in a table
 def display_roster():
-    with open('nameteam.csv') as f:
+    with open('src/nameteam.csv') as f:
         reader = csv.reader(f)
         reader.__next__()
         for row in reader:
@@ -21,7 +21,7 @@ def display_roster():
 def roster_check(filler):
     rowcount = 0
 
-    for row in open('roster.csv'):
+    for row in open('src/roster.csv'):
         rowcount += 1
     
     if rowcount <= 1:

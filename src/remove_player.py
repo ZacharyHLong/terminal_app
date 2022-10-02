@@ -7,7 +7,7 @@ import exceptions as ex
 # A loop that allows users to remove a player from the roster and CSV file.
 def remove_loop():
     cont_loop = True
-    roster = pd.read_csv('roster.csv', index_col ='First Name')
+    roster = pd.read_csv('src/roster.csv', index_col ='First Name')
     vr.roster_check('remove players from')
     
     while cont_loop == True: 
@@ -19,7 +19,7 @@ def remove_loop():
 
             if drop_confirmation == 'y':
                 roster.drop(user_input, axis = 0, inplace = True)
-                roster.to_csv('roster.csv')
+                roster.to_csv('src/roster.csv')
                 print('Successfully removed ' + user_input)
                 loop_break = input('Would you like to remove another player? (y/n): ')
                 if loop_break == 'n':

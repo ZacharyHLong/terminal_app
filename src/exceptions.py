@@ -69,7 +69,7 @@ def get_a_name(message):
 
 # A function that parses a CSV document in order to check if the user input exists within it.
 def removal_checker(message):
-    roster = pd.read_csv('roster.csv')
+    roster = pd.read_csv('src/roster.csv')
     first_names = roster['First Name']
     valid_input = False
     while not valid_input:
